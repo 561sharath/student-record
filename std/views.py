@@ -3,6 +3,7 @@ from django.shortcuts import render,redirect
 from .models import Students
 
 # Create your views here.
+#added a comment
 
 def home(request):
     std=Students.objects.all()
