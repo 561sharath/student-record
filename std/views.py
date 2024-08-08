@@ -5,6 +5,11 @@ from .models import Students
 # Create your views here.
 #added a comment
 
+'''iuefyug4rfuy5hg
+ioghg5u4ghu5hg
+iu4hfu5hgyu5
+4kjf4yughu5y'''
+
 def home(request):
     std=Students.objects.all()
 
@@ -36,11 +41,7 @@ def std_add(request):
 
     return render(request,'std/add_std.html')
 
-def delete_std(request,roll):
-        s=Students.objects.get(pk=roll)
-        s.delete()
 
-        return redirect("/std/home")
 
 def update_std(request,roll):
      std=Students.objects.get(pk=roll)
