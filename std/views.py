@@ -41,7 +41,11 @@ def std_add(request):
 
     return render(request,'std/add_std.html')
 
+def delete_std(request,roll):
+        s=Students.objects.get(pk=roll)
+        s.delete()
 
+        return redirect("/std/home")
 
 def update_std(request,roll):
      std=Students.objects.get(pk=roll)
